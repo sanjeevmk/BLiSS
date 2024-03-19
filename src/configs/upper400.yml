@@ -1,0 +1,24 @@
+model_path: "../models/upper400"
+results_dir: "../results/upper400/"
+training:
+  batch_size: 16 
+  lr: 1e-3
+  epochs: 100 
+  device_ids: [0,1]
+  data_device: 0
+triangle_feature_dim: 128 
+scan_feature_dim: 128 
+local_feature_dim: 128 
+pca_set: "../data/pipeline_data_400/pca_set_400/"
+njf_set: "../data/common/njf_set_400/"
+njf_set_scans: "../data/common/njf_set_400_scans/"
+njf_train_dir: "../data/pipeline_data_400/pair_maps/"
+growth_set_src: "../data/caesar_scans_obj"
+growth_set_rounds: "../data/pipeline_data_400/growth_set/"
+test_set: "../data/common/test_set/"
+test_set_scans: "../data/common/test_set_scans/"
+num_rounds: 1 
+start_round: 0 
+logdir: "../logs/upper400/"
+fresh: True
+test: False 

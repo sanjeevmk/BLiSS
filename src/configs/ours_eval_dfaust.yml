@@ -1,0 +1,25 @@
+model_path: "../models/ours"
+results_dir: "../results/ours_dfaust/"
+training:
+  batch_size: 16 
+  lr: 1e-3
+  epochs: 100 
+  device_ids: [0,1]
+  data_device: 0
+triangle_feature_dim: 128 
+scan_feature_dim: 128 
+local_feature_dim: 128 
+pca_set: "../data/pipeline_data_ours/pca_set/"
+njf_set: "../data/common/njf_set/"
+njf_set_scans: "../data/common/njf_set_scans/"
+njf_train_dir: "../data/pipeline_data_noisy5/pair_maps/"
+growth_set_src: "../data/caesar_scans_obj"
+growth_set_rounds: "../data/pipeline_data_noisy5/growth_set/"
+test_set: "../data/dfaust_scans/"
+test_set_scans: "../data/dfaust_scans/"
+num_rounds: 78 
+start_round: 77 
+k: 11 
+logdir: "../logs/dfaust/"
+fresh: True
+test: False 

@@ -1,0 +1,23 @@
+model_path: "../models/tmp"
+results_dir: "../results/base_edge/"
+training:
+  batch_size: 16 
+  lr: 1e-3
+  epochs: 100 
+  device_ids: [0,1]
+  data_device: 0
+triangle_feature_dim: 128 
+scan_feature_dim: 128 
+local_feature_dim: 128 
+pca_set: "../data/pipeline_data_base_edge/pca_set/"
+growth_set_src: "../data/caesar_scans_obj"
+growth_set_rounds: "../data/pipeline_data_base_edge/growth_set/"
+test_set: "../data/dummy_pipeline_data/test_set/"
+test_set_scans: "../data/dummy_pipeline_data/test_set_scans/"
+num_rounds: 50
+start_round: 0
+logdir: "../logs/baseedge/"
+fresh: True
+test: False 
+baseline: "edge"
+#baseline: "lap"

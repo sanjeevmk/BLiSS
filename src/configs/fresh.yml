@@ -1,0 +1,22 @@
+model_path: "../models/njf_fresh_top5"
+results_dir: "../results_fresh_top5/"
+training:
+  batch_size: 16 
+  lr: 1e-3
+  epochs: 100
+  device_ids: [0,1]
+  data_device: 0
+triangle_feature_dim: 128 
+scan_feature_dim: 128 
+local_feature_dim: 128 
+pca_set: "../pipeline_data_fresh/pca_set/"
+njf_set: "../pipeline_data_fresh/njf_set/"
+njf_set_scans: "../pipeline_data_fresh/njf_set_scans/"
+test_set: "../pipeline_data_fresh/test_set/"
+test_set_scans: "../pipeline_data_fresh/test_set_scans/"
+njf_train_dir: "../pipeline_data_fresh/pair_maps/"
+num_rounds: 10
+start_round: 0
+logdir: "../logs_top5/"
+fresh: True
+test: False 

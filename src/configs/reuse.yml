@@ -1,0 +1,22 @@
+model_path: "../models/njf_reuse_p10_longer_optim"
+results_dir: "../results_reuse_p10_longer_optim/"
+training:
+  batch_size: 16 
+  lr: 1e-3
+  epochs: 100
+  device_ids: [0,1]
+  data_device: 0
+triangle_feature_dim: 128 
+scan_feature_dim: 128 
+local_feature_dim: 32 
+pca_set: "../pipeline_data_reuse/pca_set/"
+njf_set: "../pipeline_data_reuse/njf_set/"
+njf_set_scans: "../pipeline_data_reuse/njf_set_scans/"
+test_set: "../pipeline_data_reuse/test_set/"
+test_set_scans: "../pipeline_data_reuse/test_set_scans/"
+njf_train_dir: "../pipeline_data_reuse/pair_maps/"
+num_rounds: 10
+start_round: 0
+logdir: "../logs_reuse/"
+fresh: False
+test: False 
